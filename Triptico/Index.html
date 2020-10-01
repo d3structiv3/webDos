@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Triptico</title>
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <div class="row bg-dark d-flex align-items-center">
+            <div class="col text-white  mb-5 mt-5" id="izq">
+                <h4 class="text-center">{{titulo}}</h4>
+                <p class="text-center">{{mision}}</p>
+                <img src="img/cocinero.png" alt="" class="rounded mx-auto d-block mt-2 mb-2" width="200" height="200" >
+                <h4 class="text-center">{{titulo2}}</h4>
+                <p class="text-center">{{valores}}</p>
+            </div>
+            <div class="col text-white  mb-5 mt-5" id="cen">
+                <div class="text-center"> 
+                    <h4>{{titulo}}</h4>
+                    <p class="text-decoration-none">
+                        <h6 v-for="(item, index) in esp" >
+                          <b>{{ especialidad }}</b> de {{ item.tipo }}
+                        </h6>
+                      </p>
+                      <img src="img/pozole.jfif" alt="" class="p-2 rounded-pill">
+                      <h4>{{titulo2}}</h4>
+                      <p class="text-decoration-none">
+                        <h6 v-for="(item, index) in cer" >
+                          <b>{{ cerveza }}</b>  {{ item.tipo }}
+                        </h6>
+                      </p>
+                </div>
+            </div>
+            <div class="col text-white  mb-5 mt-5" id="der">
+                
+                <h3 class="text-center">{{titulo}}<img src="img/logo.png" width="200" height="200" alt=""></h3>
+                
+                <table class="table table-borderless table-dark">
+                    <tr>
+                        <th scope="col"><p class="text-right">Nos encontramos en:</p></th>
+                        <th ><p class="text-left">{{direccion}}</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><p class="text-right">LLamanos al:</p></th>
+                        <th ><p class="text-left">{{telefono}}</p></th>
+                    </tr>
+                </table>
+                
+                
+            </div>
+        </div>   
+        <div id="materia" class="text-center">
+            <h1 class="text-center">{{titulo}}</h1>
+            <h6 v-for="dato of datos">
+                {{dato}} 
+            </h6>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
+
