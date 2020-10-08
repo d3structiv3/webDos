@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="eje4" class="container mt-3">
+        <!--Se combinan clases dinamicas y estaticas de bootstrap con vue.js-->
+        <div class="p-2" :class="[color,'text-white']">
+            <p>
+                La relatividad de Einstein muestra que todo depende del sistema donde sea vea. Einstein logra demostrar
+                esta teoría cuando logra descubrir que la velocidad de la luz no es relativa sino absoluta. Por
+                supuesto, esto genera una verdad en la ciencia: existen fenómenos absolutos y existen fenómenos
+                relativos.
+            </p>
+        </div>
+        <label for="color">Cambia el color del fondo</label>
+        <br>
+        <!--Se hace un arreglo de objetos para que dependiendo el estado se ponga uno u otro color en el bg-->
+        <input type="text" name="color" id="" v-model="color">
+        <div class="text-white p-2 mt-3" :class="{'bg-dark' : estado, 'bg-danger' : !estado}">
+            <p>La contaminación es el proceso en el cual se introducen sustancias al medio ambiente que generan un
+                desequilibrio. En la actualidad existe una contaminación mundial debido al aumento de la población y de
+                las industria. Sin embargo, es la inconsciencia de las personas el principal agente de contaminación.
+                Debemos luchar por sistemas de gobierno más sustentables y sostenibles y de esta manera ayudar al
+                planeta.
+            </p>
+        </div>
+        <button @click="cambiarColor" :class="btnColor">Cambiar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="eje4.js"></script>
+</body>
+
+</html>

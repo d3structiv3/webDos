@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <div id="content">
+        <h4 style="text-align: center;">{{titulo}}</h4>
+        <li v-for="animal of animales" style="text-decoration: none;">
+            {{animal.nombre}} 
+            <input type="text" name="animal" v-model="animal.especie">
+            {{animal.cantidad}}
+            <button @click="animal.cantidad++">+</button>
+            <button @click="animal.cantidad--">-</button>
+        </li>
+        <h6>Existen {{totalAnimales}} animales en total</h6>
+        <button>Enviar</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="eje3.js"></script>
+</body>
+</html>

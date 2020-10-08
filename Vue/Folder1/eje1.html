@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <div id="uno">
+        <!--Texto sencillo-->
+        <h4>{{texto}}</h4>
+        <!--For para arreglo sencillo-->
+        <p v-for="marca of marcas">{{marca}}</p>
+        <!--For para arreglo de objetos-->
+        <p v-for="celulares of  marcaModelo">
+            <b>{{celulares.marca}}</b> - {{celulares.modelo}}
+        </p>
+        <!--Condicionlaes en for-->
+        <p v-for="materia of materias">
+            Asignatura: {{materia.asignatura}}
+                {{materia.calificacion}}
+                <span v-if="materia.calificacion < 70" style="color: red;">NA</span>
+        </p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="eje1.js"></script>
+</body>
+</html>

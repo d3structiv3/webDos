@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#materia',
     data: {
-        titulo: 'Practica Triprico',
+        titulo: 'Practica Triprico 30-sep-2020',
         datos :['Jose Daniel Ramirez Hinojosa','16090301','J3','Vespertino']
     }
 })
@@ -23,7 +23,7 @@ const centro = new Vue({
         
         especialidad: 'Pozole',
         esp: [
-            { tipo: 'Pollo' },
+            { tipo: 'Pollo' }, 
             { tipo: 'Cabeza de cerdo'},
             { tipo: 'Maciza' },
             { tipo: 'Surtido' }
