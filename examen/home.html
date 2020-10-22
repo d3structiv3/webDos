@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="slide bg-primary text-center p-5">
+        <h1 class="display-2">
+            <a href="" class="typewrite text-white" data-period="1000" data-type='[
+             "Examen Unidad 1 WEB 2.", "Jose Daniel Ramirez Hinojosa", "Matricula: 16090301", "Grupo: 3951" 
+             ]'>
+                <span class="wrap"></span>
+            </a>
+        </h1>
+    </div>
+    </div>
+    <div class="container mt-3" >
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Passwords en HTML</h2>
+                <p class="text-justify">
+                    Los elementos input de tipo "password" proporcionan una forma para que el usuario ingrese una contraseña de forma segura. El elemento se presenta como un control de editor de texto,
+                    sin formato, de una línea, en el que el texto está oculto para que no pueda leerse, generalmente
+                    reemplazando cada carácter con un símbolo como el asterisco ("*") o un punto ("•"). Este carácter
+                    variará dependiendo del user agent y del OS.
+                    Además de los atributos listados abajo, este elemento puede tener cualquier global attributes.
+    
+                    autocompleteHTML5
+                    Establece el valor del atributo de autocompletado en el campo de una contraseña. En caso de ser cierto, automaticamente se rellena con el valor previamente almacenado.
+                    autofocusHTML5
+                    Este atributo Booleano te permite especificar que la página ponga el foco en un campo a menos que el usuario lo revoque, por ejemplo, escribir en un campo diferente. Solo un elemento en el documento puede tener el atributo Booleano autofocus.
+                    disabled
+                    Este atributo Booleano indica que el campo de la contraseña no está disponible. Además, deshabilita los valores que no son enviados por el campo.
+                </p>
+            </div>
+            <div class="col">
+                <h2 class="text-center">Passwords en PHP</h2>
+                <p>
+                    password_hash() crea un nuevo hash de contraseña usando un algoritmo de hash fuerte de único sentido. password_hash() es compatible con crypt(). Por lo tanto, los hash de contraseñas creados con crypt() se pueden usar con password_hash().
+
+                    Actualmente se admiten los siguientes algoritmos:
+    
+                    PASSWORD_DEFAULT - Usar el algoritmo bcrypt (predeterminado a partir de PHP 5.5.0). Observe que esta constante está diseñada para cambiar siempre que se añada un algoritmo nuevo y más fuerte a PHP. Por esta razón, la longitud del resultado de usar este identificador puede cambiar con el tiempo. Por lo tanto, se recomienda almacenar el resultado en una columna de una base de datos que pueda apliarse a más de 60 caracteres (255 caracteres sería una buena elección).
+                    PASSWORD_BCRYPT - Usar el algoritmo CRYPT_BLOWFISH para crear el hash. Producirá un hash estándar compatible con crypt() utilizando el identificador "$2y$". El resultado siempre será un string de 60 caracteres, o FALSE en caso de error.
+                    Opciones admitidas:
+    
+                    salt - para proporcionar manualmente una sal a usar cuando se realiza el hash de la contraseña. Observe que esto sobrescribirá y prevendrá que una sal sea generada automáticamente.
+    
+                    Si se omite, se generará una sal aleatoria mediante password_hash() para cada hash. Este es el modo de operación intencionado.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="animacion.js"></script>
+</body>
+
+</html>
