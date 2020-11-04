@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <h4>Entradas de texto </h4>
+                <label for="exampleInputEmail1">Texto plano</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1">Numeros</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1">Contraseñas</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <h4>Check box</h4>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">HTML</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">JavaScript</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">CSS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">XML</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                <label class="form-check-label" for="inlineCheckbox3">BLOQUEADO</label>
+            </div>
+            <h4>Radios</h4>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Menos de 18</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">18 a 30</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">31 a 50</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Mas de 50</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                    disabled>
+                <label class="form-check-label" for="inlineRadio3">BLOQUEADO</label>
+            </div>
+            <h4>Ficheros</h4>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Subir un archivo</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <h4>Entrada invisible</h4>
+            <p>input type="hidden" id="identificador" value="valor" name="nombre"</p>
+            <input type="hidden" id="identificador" value="valor" name="nombre" />
+            <h4>Imagenes</h4>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Imagenes</label>
+                <input type="image" class="form-control" id="example" aria-describedby="emailHelp">
+            </div>
+            <h4>Area de texto</h4>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <h4>Combo de opciones</h4>
+            <select class="custom-select">
+                <option>Atlético de Madrid</option>
+                <option>Real Betis</option>
+                <option>FC. Barcelona</option>
+                <option>Real Madrid</option>
+                <option>Zaragoza</option>
+            </select>
+            <select class="custom-select">
+                <option>Atletico de Madrid</option>
+                <option selected="selected">Betis</option>
+                <option>FC. Barcelona</option>
+                <option>Real Madrid</option>
+                <option>Zaragoza</option>
+              </select>
+              
+            <select name="ciudad" class="custom-select">
+                <optgroup label="Europa">
+                    <option>Madrid</option>
+                    <option>Londres</option>
+                    <option>Paris</option>
+                </optgroup>
+                <optgroup label="Suramerica">
+                    <option>Santiago</option>
+                    <option>Sao Paulo</option>
+                    <option>Lima</option>
+                    <option>Bogota</option>
+                </optgroup>
+                <optgroup label="Africa">
+                    <option>Casablanca</option>
+                    <option>Ciudad del Cabo</option>
+                </optgroup>
+            </select>
+
+            <h4>Botones</h4>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Borrar</button>
+            <button type="button" class="btn btn-dark">Boton</button>
+        </form>
+    </div>
+</body>
+
+</html>

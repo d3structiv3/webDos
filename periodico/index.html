@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="periodico">
+        <div class="navbar slide bg-danger">
+
+            <h1 class="p-3 display-1 text-white">destructive</h1>
+
+            <div class="form-inline">
+                <h2 class="p-3  text-white">{{fecha}} {{hora}}</h2>
+                
+            </div>
+        </div>
+
+
+        <div class="container">
+            <!--Lema-->
+            <div class="mt-2 row">
+                <div class="col">
+                    <h5 class="text-center strong">www.miperiodico.com</h5>
+                </div>
+                <div class="col">
+                    <h5 class="text-center">El mejor periodico de México</h5>
+                </div>
+                <div class="col" >
+                    <h5 class="text-center">WEBSITE de noticias</h5>
+                </div>
+            </div>
+
+
+            <!--Datos tecnicos-->
+            
+            <div class="alert alert-dark p-0 mb-1" role="alert">
+            </div>
+            <!--Sumario de noticias destacadas -->
+            <div class="py-0 mb-1 alert alert-primary">
+                <div class="py-3 row">
+                    <div class="col-md-4">
+                        <div class="row position-relative">
+                            <div class="col    d-flex flex-column position-static">
+                                <h5 class="mb-0">Revista de espectaculos</h5>
+                                <div class="mb-1 text-muted">{{fecha}}</div>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="img/r1.jpg" class="bd-placeholder-img" width="75" height="75">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row position-relative">
+                            <div class="col  d-flex flex-column position-static">
+                                <h5 class="mb-0">Famosa en polemica</h5>
+                                <div class="mb-1 text-muted">{{fecha}}</div>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="img/r2.jpg" class="bd-placeholder-img" width="75" height="75">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row position-relative">
+                            <div class="col  d-flex flex-column position-static">
+                                <h5 class="mb-0">Personas aman Paris</h5>
+                                <div class="mb-1 text-muted">{{fecha}}</div>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="img/r3.jpg" class="bd-placeholder-img" width="75" height="75">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-dark p-0 mb-1" role="alert">
+            </div>
+
+            <!--Titulo 1-->
+
+            <h5 class="text-center text-danger">
+                En conferencia de prensa desde Palacio Nacional, autoridades de salud reportan
+            </h5>
+
+            <!--Noticia principal del dia-->
+            <strong class="font-weight-bold">
+                <h1 class="text-center display-4">
+                    Suman 4 mil 477 muertes por Covid en México; hay 42,595 casos
+                </h1>
+            </strong>
+
+
+            <!--Noticia-->
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: justify; font-size: 21px;">
+                        México suma, al corte de este 14 de mayo, 4 mil 477 muertes por Covid-19, con 42 mil 595 casos
+                        de
+                        contagios confirmados de coronavirus, según informaron autoridades de la Secretaría de Salud.
+                        Además, José Luis Alomía, director general de Epidemiología, detalló que hay 26 mil 746 casos
+                        sospechosos, aunque con 86 mil 591 casos negativos acumulados en el país. Hasta este miércoles,
+                        la
+                        Secretaría de Salud había confirmado más de 40 mil 186 contagios, 4 mil 220 muertos y alrededor
+                        de 9
+                        mil casos activos por Covid-19.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="img/not.JPG" alt="">
+                    Autor e foto : Joel
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: justify;">
+                    <h3>MÉXICO ROMPE LA BARRERA DE LOS 2 MIL CONTAGIOS POR DÍA</h3>
+
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                    <h3>México acogerá cursos gratuitos online para aprender a invertir en la bolsa de valores con
+                        práctica
+                        en vivo: el dia 18 de Mayo</h3>
+
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="img/p.JPG" alt="">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
