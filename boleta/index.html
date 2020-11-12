@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h4 class="text-center mt-3">Boleta de calificaciones</h4>
+        <input type="text" class="form-control mb-3" placeholder="Nombre" id="nombre">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                   <th>Asignatura</th>
+                   <th>UNIDAD 1</th>
+                   <th>UNIDAD 2</th>
+                   <th>UNIDAD 3</th>
+                   <th>UNIDAD 4</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><input type="text" class="form-control" placeholder="Materia" id="mat1"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal1"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal2"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal3"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal4"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" class="form-control" placeholder="Materia" id="mat2"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal5"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal6"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal7"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal8"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" class="form-control" placeholder="Materia" id="mat3"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal9"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal10"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal11"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal12"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" class="form-control" placeholder="Materia" id="mat4"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal13"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal14"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal15"></th>
+                    <th><input type="text" class="form-control" placeholder="Calificacion" id="cal16"></th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <label for="guardar">Nombre del archivo</label>
+            <input type="text" id="guardar">
+            <button class="btn btn-dark" onclick="setTXT()">Guardar</button>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

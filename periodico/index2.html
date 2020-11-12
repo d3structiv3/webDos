@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="" id="periodico">
+        <div class="navbar slide bg-danger">
+
+            <h1 class="p-3 display-1 text-white">destructive</h1>
+
+            <div class="form-inline">
+                <h2 class="p-3  text-white">{{fecha}} {{hora}}</h2>
+
+            </div>
+        </div>
+        <div class="container">
+            <!--Titulo 1-->
+
+            <h5 class="text-center text-success">
+                Con los 16 delegados que otorga Michigan, Biden suma 264 frente a los 214 que acumula Trump; con esto,
+                sólo
+                le faltarían 6 votos electorales para ser el próximo presidente de EU
+            </h5>
+
+            <!--Noticia principal del dia-->
+            <strong class="font-weight-bold">
+                <h1 class="text-center display-4">
+                    <b>Biden gana Michigan y está a 6 votos de ganar la Presidencia de EU</b>
+                </h1>
+            </strong>
+            <!--Noticia-->
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: justify; font-size: 21px;">
+                        El candidato demócrata a la Casa Blanca, Joe Biden, ganó las elecciones en el estado clave de
+                        Michigan, con lo que amplía todavía más el margen sobre su rival, el presidente Donald Trump,
+                        según la agencia Associated Press.
+
+                        Con los 16 delegados que otorga Michigan en el Colegio Electoral, Biden suma 264 frente a los
+                        214 que acumula Trump, en su objetivo compartido de llegar a los 270 compromisarios que dan la
+                        victoria.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="img/p2_1.webp" alt="" width="600">
+                    Autor e foto : Joel
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="navbar slide bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <p class=" display-4 text-white">La ONU pidió a López Obrador modificar o anular el acuerdo de
+                            militarización de las calles en México</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/ob.png" class="" alt="" width="300" height="300">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-3 text-center">
+            <div class="row">
+                <div class="col-3">
+                    <h6>Derportes</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dep">
+                        'El Diez' está "excelente"; descarta recuperación en Venezuela o Cuba
+                    </button>
+                </div>
+                <div class="col-3">
+                    <h6>Nacionales</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nac">
+                        Van 295 casos de covid-19 en San Lázaro; 73 de ellos entre diputados
+                    </button>
+                </div>
+
+                <div class="col-3">
+                    <h6>Rojas</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#roja">
+                        Asaltantes asesinan a policía en la colonia México Nuevo
+                    </button>
+                </div>
+
+                <div class="col-3">
+                    <h6>Gobierno</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gob">
+                        Los temas de AMLO en La Mañanera del 4 de noviembre
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="dep" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="dep"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dep">Noticia deportes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="tetx-justify">
+                        Buenos Aires. El astro del futbol Diego Maradona se encuentra en "excelente" estado y descarta
+                        dejar Argentina para realizar la recuperación en Venezuela o Cuba, tras la intervención de
+                        urgencia realizada el lunes por un hematoma en la cabeza, dijo el abogado del ex futbolista,
+                        Matías Morla.
+
+                        "El último parte médico fue excelente. ¡Mucha fuerza y vamos a salir adelante!", señaló Morla a
+                        los periodistas a la salida de la clínica ubicada en los suburbios de Buenos Aires.
+
+                        El abogado de Maradona señaló también que "Diego tiene la cabeza en Gimnasia", el club al que
+                        dirige desde 2019, y descartó las versiones que indicaban la posibilidad de que fuera a realizar
+                        la recuperación fuera de Argentina.
+
+                        "Diego ama Cuba, ayer hablé con el hijo de Fidel Castro. Tanto Venezuela como Cuba son países
+                        amigos para que Diego esté, pero Diego está con la cabeza en Gimnasia", apuntó Morla a los
+                        periodistas.
+
+                        Maradona, de 60 años, fue operado el lunes por la noche en la Clínica Olivos, donde un equipo
+                        encabezado por su médico personal Leopoldo Luque "evacuó el hematoma de manera exitosa", de
+                        acuerdo al primer informe entregado cerca de la medianoche.
+                    </p>
+                    <img src="img/dep.jpg" alt="" srcset="" width="400" height="400" class="text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nac" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="dep"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dep">Noticia nacional</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="tetx-justify">
+                        La Cámara de Diputados acumuló hasta hoy un total de 295 casos confirmados de covid-19, de los
+                        cuales 73 corresponden a legisladores de las diversas fracciones parlamentarias y 222 a
+                        trabajadores de distintas áreas. Tan sólo durante la última semana se registraron 15 contagios,
+                        entre ellos los de cuatro diputados y once empleados. Te recomendamos: Diputados piden reforzar
+                        medidas de salud en San Lázaro para evitar contagios de covid-19 De acuerdo con las cifras de
+                        los órganos directivos en el Palacio de San Lázaro, 53 personas se mantienen con el contagio
+                        activo y 228 se han recuperado ya
+                    </p>
+                    <img src="img/nac.jpg" alt="" srcset="" width="400" height="400" class="text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="roja" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="dep"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dep">Noticia roja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="tetx-justify">
+                        Un Policía Auxiliar adscrito a Miguel Hidalgo falleció al recibir un disparo en la cabeza por
+                        parte de dos delincuentes, quienes robaban un vehículo en calles de la colonia México Nuevo.
+
+                        De acuerdo con los hechos, el policía se encontraba sólo apoyando un traslado que haría una
+                        ambulancia sobre el callejón San Joaquín e Ignacio Allende, cuando dos delincuentes robaban un
+                        vehículo a pocos metros de ahí.
+
+                        El uniformado, sin saber qué pasaba, volteó a observar a los sujetos e inmediato, uno de ellos
+                        le disparó en la cabeza, para después huir.
+
+                        A través de las cámaras de la ciudad, elementos de la Secretaría de Seguridad Ciudadana (SSC),
+                        detuvieron a uno de ellos.
+
+                        El policía fue atendido aún con vida, sin embargo, durante su traslado a un hospital cercano
+                        falleció
+                    </p>
+                    <img src="img/roja.webp" alt="" srcset="" width="400" height="400" class="text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gob" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="dep"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dep">Noticia gobienro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="tetx-justify">
+                        El presidente Andrés Manuel López Obrador presentó en La Mañanera los protocolos de El Buen Fin,
+                        acompañado de integrantes del gabinete, "nos da mucho gusto que se pueda anunciar este programa
+                        de manera conjunta tanto el sector público como el sector privado". La secretaria de Economía,
+                        Graciela Márquez, afirmó que se trata de la décima edición de El Buen Fin, "la buena noticia
+                        aquí es que todos, sector público y privado van a cuidar la salud". Y detalló que será del 9 al
+                        20 de noviembre, "se seguirán los protocolos sanitarios, se evitarán aglomeraciones y habrá
+                        moderación de aforos". El titular de la Confederación de Cámaras Nacionales de Comercio,
+                        Servicios y Turismo (Concanaco y Servitur), José Manuel López, dijo que El Buen Fin 2020 será
+                        "el más exitoso de todos los tiempos".
+                        https://www.milenio.com/politica/amlo-temas-conferencia-mananera-4-noviembre-2020
+                    </p>
+                    <img src="img/ob.png" alt="" srcset="" width="400" height="400" class="text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
