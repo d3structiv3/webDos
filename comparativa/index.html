@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="display-3 text-center mb-4">Buscadores</h1>
+    <div class="row align-items-start">
+        <div class="col">
+        </div>
+        <div class="col">
+            <form class="d-flex" action="http://www.google.com/search" method="GET">
+                <img class="p-1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHRUPch3Rh5G-tBrqWfxYXeBJfUdR_W6u9A&usqp=CAU"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con google..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://espanol.search.yahoo.com/search" method="GET">
+                <img class="p-1" src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage_2x.png"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con yahoo..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://espanol.search.yahoo.com/search" method="GET">
+                <img class="p-1" src="https://www.uv.es/avirtual/internet/graficos/altavista1.gif" alt="" height="45"
+                    width="100">
+                <input class="form-control" type="text" placeholder="Buscar con altavista..." aria-label="Search"
+                    name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://www.bing.com/search" method="GET">
+                <img class="p-1"
+                    src="data:image/png;base64,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"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con bing..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://search.lycos.com/web/" method="GET">
+                <img class="p-1"
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Lycos_logo.png"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con lycos..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://www.webcrawler.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIweYitBqmBCcO2RnblycmelrKeaBymlSfA&usqp=CAU"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con webcrawle..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://www.webcrawler.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://www.kindpng.com/picc/m/195-1956311_hotbot-logo-hd-png-download.png"
+                    alt="" height="45" width="100">
+                <input type="hidden" name=hl value=es>
+                <a class="btn btn-outline-dark" href="https://www.hotbot.com/">It a hotbot</a>
+            </form>
+            <form class="d-flex mt-3" action="https://results.looksmart.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://s3.amazonaws.com/assist.syncapse.com/key-272:b20f76c9-319a-4bd2-977a-5679de8fa556.png"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con looksmart..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://www.webcrawler.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/de/About.com_logo.png"
+                    alt="" height="45" width="100">
+                <input type="hidden" name=hl value=es>
+                <a class="btn btn-outline-dark" href="https://www.hotbot.com/">Ir a about.com</a>
+            </form>
+            <form class="d-flex mt-3" action="https://www.webcrawler.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://metabuscadoresandmetadatos.weebly.com/uploads/4/3/3/0/43302047/8614971.gif?282"
+                    alt="" height="45" width="100">
+                <input type="hidden" name=hl value=es>
+                <a class="btn btn-outline-dark" href="https://www.hotbot.com/">Ir a copernic.com</a>
+            </form>
+            <form class="d-flex mt-3" action="https://es.ask.com/web" method="GET">
+                <img class="p-1"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a0/AskLogoNew07.PNG"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con ASK..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://results.excite.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://dtyoc.files.wordpress.com/2015/11/excite-banner.jpg?w=604&h=340"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con excite..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://www.dogpile.com/serp" method="GET">
+                <img class="p-1"
+                    src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/8307574/dogpile.gif"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con dogpile..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+            <form class="d-flex mt-3" action="https://search.aol.com/aol/search" method="GET">
+                <img class="p-1"
+                    src="https://www.enriquedans.com/wp-content/uploads/blogger/uploaded_images/AOL02-738799.png"
+                    alt="" height="45" width="100">
+                <input class="form-control" type="text" placeholder="Buscar con aol..." aria-label="Search" name=q>
+                <input type="hidden" name=hl value=es>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+
+</body>
+
+</html>
